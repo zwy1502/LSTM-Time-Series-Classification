@@ -1,3 +1,15 @@
+"""
+@File    :   train_with_attention_optuna.py
+@Time    :   2025-08-31
+@Author  :   Wenyi Zhou (周文毅)
+@Contact :   zhouzhouwang1502@gmail.com
+@Desc    :   本项目是用于时序遥感影像分类的LSTM模型的高级实现版本。
+             核心亮点包括：
+             1. **注意力机制 (Attention Mechanism)**
+             2. **自动化超参数寻优 (Optuna)**
+             3. **处理样本不平衡 (SMOTE)**
+             4. **详尽的日志与评估**
+"""
 import torch
 import time
 import torch.nn as nn

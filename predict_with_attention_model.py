@@ -1,3 +1,13 @@
+
+"""
+@File    :   predict_with_attention_model.py
+@Time    :   2025-08-31
+@Author  :   Wenyi Zhou (周文毅)
+@Contact :   zhouzhouwang1502@gmail.com
+@Desc    :   此脚本是与高级训练脚本配套的推理(预测)模块。
+             它能够加载经过Optuna优化并带有注意力机制的LSTM模型，
+             对大尺寸的GeoTIFF遥感影像进行高效、批量的像素级分类。
+"""
 import numpy as np
 from osgeo import gdal
 from torch.nn import functional as F
