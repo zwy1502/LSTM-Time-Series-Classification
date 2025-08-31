@@ -1,3 +1,15 @@
+"""
+@File    :   LSTM注意力机制训练优化.py
+@Time    :   2025-08-31
+@Author  :   Wenyi Zhou (周文毅)
+@Contact :   zhouzhouwang1502@gmail.com
+@Desc    :   本项目是用于时序遥感影像分类的LSTM模型的高级实现版本。
+             核心亮点包括：
+             1. **注意力机制 (Attention Mechanism)**: 引入多头注意力机制，使模型能自适应地关注对分类最重要的时间节点。
+             2. **自动化超参数寻优 (Hyperparameter Tuning)**: 集成Optuna框架，自动搜索并确定模型的最佳超参数组合。
+             3. **处理样本不平衡**: 使用SMOTE算法对训练数据进行过采样，有效缓解类别不平衡问题。
+             4. **详尽的日志与评估**: 构建了完善的日志系统，并能输出包括Kappa系数、UA、PA在内的全面精度指标。
+"""
 import torch
 import time
 import torch.nn as nn
